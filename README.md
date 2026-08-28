@@ -1,10 +1,10 @@
 <div align="center">
 
-# Sahaj Sinha
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0f10,50:1c2022,100:FF4E17&height=170&section=header&text=Sahaj%20Sinha&fontSize=54&fontColor=EDE8E1&animation=fadeIn&fontAlignY=36&desc=AI%20%26%20Big%20Data%20%C2%B7%20Woosong%20University%2C%20Daejeon&descAlignY=58&descSize=16" width="100%" alt="Sahaj Sinha" />
 
-**AI & Big Data — Woosong University, Daejeon**
-
-Systems that build an understanding of physical space from raw sensor data, and then act on it.
+<a href="https://sahaj-sinha.netlify.app">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=900&color=FF4E17&center=true&vCenter=true&width=760&height=42&lines=Turning+sensor+noise+into+a+map+a+machine+can+act+on;Pose+estimation+%26+computer+vision+at+the+Woosong+AI+Lab;SLAM+%C2%B7+Robotics+%C2%B7+Real-time+systems+%C2%B7+Applied+AI" alt="What I work on" />
+</a>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF4E17?style=flat-square&logoColor=white)](https://sahaj-sinha.netlify.app)
 [![CV](https://img.shields.io/badge/CV-1c2022?style=flat-square)](https://sahaj-sinha.netlify.app/cv)
@@ -32,7 +32,7 @@ Holding a 100% merit scholarship and full GPA across four consecutive semesters,
 | **[AeroSense](https://github.com/sahaj2310-tech/AeroSense)** | Real-time air quality monitoring and forecasting — 13 sensing channels, XGBoost classification plus LSTM forecasting. | ESP32 · Python · XGBoost · TensorFlow |
 | **[UniMate](https://github.com/sahaj2310-tech/UniMate)** | University assistant that refuses to guess: source-grounded RAG with citations, 14 languages, injection guards. | FastAPI · pgvector · Ollama · React |
 | **[Voice AI Assistant](https://github.com/sahaj2310-tech/Voice-AI-Assistant)** | Self-hosted Korean voice front desk — Whisper STT, local LLM over RAG, edge-tts, Twilio phone integration. | Whisper · Ollama · FastAPI · Twilio |
-| **[Glassly](https://github.com/sahaj2310-tech/Glassly-AI)** | On-device AI skin analysis. Real-time facial landmarking, nothing leaves the phone. → [glasslyai.com](https://glasslyai.com) | MediaPipe · TensorFlow.js · Capacitor |
+| **[Glassly](https://github.com/sahaj2310-tech/Glassly-AI)** | On-device AI skin analysis. Real-time facial landmarking, nothing leaves the phone. → [www.glasslyai.com](https://www.glasslyai.com/) | MediaPipe · TensorFlow.js · Capacitor |
 | **[ClarityDeck](https://github.com/sahaj2310-tech/claritydeck)** | Turns messy input into a structured, shareable card using a local LLM. No cloud, no rate limits. | Next.js · FastAPI · Ollama |
 
 Also building an **AI-based reconnaissance rover** — stereo VSLAM and custom YOLO detection on a Raspberry Pi 5 with an AI accelerator. Field hardware, no public repo.
@@ -41,7 +41,11 @@ Also building an **AI-based reconnaissance rover** — stereo VSLAM and custom Y
 
 ### Published
 
-> Sinha, S., et al. (2026). *Survey on Reconnaissance Autonomous Robotic Systems for Disaster Management.* **Sensors** (MDPI), 26(5), 1659.
+> **Sinha, S.**, Lee, S., & Singh, S. (2026). *Survey on Reconnaissance Autonomous Robotic Systems for Disaster Management.* **Sensors** (MDPI), 26(5), 1659.
+>
+> [![DOI](https://img.shields.io/badge/DOI-10.3390%2Fs26051659-FF4E17?style=flat-square)](https://doi.org/10.3390/s26051659) [![Read](https://img.shields.io/badge/Read%20on%20MDPI-1c2022?style=flat-square)](https://www.mdpi.com/1424-8220/26/5/1659)
+
+Further papers in preparation with faculty, for IEEE journals and other venues.
 
 ---
 
@@ -89,9 +93,37 @@ Also building an **AI-based reconnaissance rover** — stereo VSLAM and custom Y
 
 <div align="center">
 
+### Contribution graph, eaten
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sahaj2310-tech/sahaj2310-tech/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sahaj2310-tech/sahaj2310-tech/output/github-snake.svg" />
+  <img alt="Snake eating my contribution graph" src="https://raw.githubusercontent.com/sahaj2310-tech/sahaj2310-tech/output/github-snake.svg" width="100%" />
+</picture>
+
+<br/>
+
+![Activity](https://github-readme-activity-graph.vercel.app/graph?username=sahaj2310-tech&bg_color=0d0f10&color=8b9195&line=FF4E17&point=EDE8E1&area=true&area_color=FF4E17&hide_border=true&custom_title=Commit%20activity)
+
+<br/>
+
 ![Stats](https://github-readme-stats.shion.dev/api?username=sahaj2310-tech&theme=dark&hide_border=true&hide_title=true&icon_color=FF4E17&text_color=8b9195&bg_color=0d0f10)
 ![Languages](https://github-readme-stats.shion.dev/api/top-langs/?username=sahaj2310-tech&theme=dark&hide_border=true&layout=compact&text_color=8b9195&bg_color=0d0f10&title_color=FF4E17)
 
+<br/>
+
+![Streak](https://streak-stats.demolab.com?user=sahaj2310-tech&theme=dark&hide_border=true&background=0d0f10&stroke=1c2022&ring=FF4E17&fire=FF4E17&currStreakLabel=8b9195&sideLabels=8b9195&dates=565d61)
+
+<br/>
+
+![Trophies](https://github-profile-trophy.vercel.app/?username=sahaj2310-tech&theme=matrix&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6)
+
+<br/>
+
+---
+
 **[sahaj-sinha.netlify.app](https://sahaj-sinha.netlify.app)** · Daejeon, South Korea
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF4E17,50:1c2022,100:0d0f10&height=90&section=footer" width="100%" alt="" />
 
 </div>
