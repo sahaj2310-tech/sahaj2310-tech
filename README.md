@@ -39,6 +39,90 @@ Also building an **AI-based reconnaissance rover** — stereo VSLAM and custom Y
 
 ---
 
+### How the work fits together
+
+Everything below runs the same loop: raw sensor data in, a usable understanding of the world out, then something acts on it.
+
+```mermaid
+flowchart LR
+    S["📷 Sensors<br/>camera · IMU · ultrasonic · gas"] --> P
+
+    subgraph P["Perception"]
+        direction TB
+        CV["Computer Vision<br/><i>features · landmarks · detection</i>"]
+        DEPTH["Depth &amp; Geometry<br/><i>MiDaS · stereo · TSDF</i>"]
+        CV --> DEPTH
+    end
+
+    P --> M
+
+    subgraph M["Understanding"]
+        direction TB
+        SLAM["SLAM<br/><i>pose graph · loop closure</i>"]
+        SEM["Semantics<br/><i>what the thing is</i>"]
+        SLAM --> SEM
+    end
+
+    M --> A
+
+    subgraph A["Action"]
+        direction TB
+        PLAN["Planning<br/><i>occupancy · paths</i>"]
+        CTRL["Control<br/><i>drive · gimbal · recovery</i>"]
+        PLAN --> CTRL
+    end
+
+    A --> OUT["🤖 A system that moves,<br/>reports, or answers"]
+
+    style S fill:#0d0f10,stroke:#FF4E17,color:#EDE8E1
+    style OUT fill:#0d0f10,stroke:#FF4E17,color:#EDE8E1
+    style P fill:transparent,stroke:#8b9195
+    style M fill:transparent,stroke:#8b9195
+    style A fill:transparent,stroke:#8b9195
+```
+
+AETHER-SLAM is the whole loop in one system. TerraVanguard and the recon rover are the loop on hardware that has to survive contact with the ground. WatchCore is the loop when failure is the interesting case.
+
+---
+
+### By the numbers
+
+| | |
+| :-- | :-- |
+| **9** | shipped projects, from monocular SLAM to a self-hosted voice agent |
+| **1** | peer-reviewed paper, first author, in *Sensors* (MDPI) |
+| **10** | verified credentials — Microsoft, AWS, PAMS, Korea University |
+| **4** | consecutive semesters at full GPA, on a 100% merit scholarship |
+| **3** | languages: English and Hindi fluent, Korean to Level 3 |
+
+---
+
+<details>
+<summary><b>What I am reaching for next</b></summary>
+
+<br/>
+
+- **Pose estimation that survives the real world** — occlusion, motion blur, and the moments a tracker normally gives up.
+- **Perception that runs where the sensors are.** Cloud inference is a latency budget nobody actually has on a moving robot.
+- **Systems that admit uncertainty.** UniMate refuses to answer when its sources do not cover the question; I want that instinct everywhere.
+- **More papers.** Further work with faculty is in preparation for IEEE venues.
+
+</details>
+
+<details>
+<summary><b>Hardware I have actually put in the field</b></summary>
+
+<br/>
+
+| Platform | Compute | Sensing |
+| :--- | :--- | :--- |
+| Recon Rover | Raspberry Pi 5 (16 GB) + AI HAT accelerator | ORB stereo camera |
+| TerraVanguard | ESP32-S3 | MPU9250 IMU · 3× HC-SR04 · DHT11 · camera |
+| AeroSense | ESP32 | MQ-135 · DHT22 · PM sensing, 13 channels |
+
+</details>
+---
+
 ### Published
 
 > **Sinha, S.**, Lee, S., & Singh, S. (2026). *Survey on Reconnaissance Autonomous Robotic Systems for Disaster Management.* **Sensors** (MDPI), 26(5), 1659.
@@ -51,7 +135,11 @@ Further papers in preparation with faculty, for IEEE journals and other venues.
 
 ### Stack
 
-**Languages**
+<details open>
+<summary><b>Languages</b></summary>
+
+<br/>
+
 ![Python](https://img.shields.io/badge/Python-1c2022?style=flat-square&logo=python&logoColor=FF4E17)
 ![C++](https://img.shields.io/badge/C%2FC%2B%2B-1c2022?style=flat-square&logo=cplusplus&logoColor=FF4E17)
 ![TypeScript](https://img.shields.io/badge/TypeScript-1c2022?style=flat-square&logo=typescript&logoColor=FF4E17)
@@ -59,7 +147,13 @@ Further papers in preparation with faculty, for IEEE journals and other venues.
 ![R](https://img.shields.io/badge/R-1c2022?style=flat-square&logo=r&logoColor=FF4E17)
 ![Java](https://img.shields.io/badge/Java-1c2022?style=flat-square&logo=openjdk&logoColor=FF4E17)
 
-**Perception & learning**
+</details>
+
+<details>
+<summary><b>Perception &amp; learning</b></summary>
+
+<br/>
+
 ![PyTorch](https://img.shields.io/badge/PyTorch-1c2022?style=flat-square&logo=pytorch&logoColor=FF4E17)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-1c2022?style=flat-square&logo=tensorflow&logoColor=FF4E17)
 ![OpenCV](https://img.shields.io/badge/OpenCV-1c2022?style=flat-square&logo=opencv&logoColor=FF4E17)
@@ -67,7 +161,13 @@ Further papers in preparation with faculty, for IEEE journals and other venues.
 ![CUDA](https://img.shields.io/badge/CUDA-1c2022?style=flat-square&logo=nvidia&logoColor=FF4E17)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1c2022?style=flat-square&logo=scikitlearn&logoColor=FF4E17)
 
-**Embedded & systems**
+</details>
+
+<details>
+<summary><b>Embedded &amp; systems</b></summary>
+
+<br/>
+
 ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-1c2022?style=flat-square&logo=freertos&logoColor=FF4E17)
 ![ESP32](https://img.shields.io/badge/ESP32-1c2022?style=flat-square&logo=espressif&logoColor=FF4E17)
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-1c2022?style=flat-square&logo=raspberrypi&logoColor=FF4E17)
@@ -75,13 +175,21 @@ Further papers in preparation with faculty, for IEEE journals and other venues.
 ![Arduino](https://img.shields.io/badge/Arduino-1c2022?style=flat-square&logo=arduino&logoColor=FF4E17)
 ![Docker](https://img.shields.io/badge/Docker-1c2022?style=flat-square&logo=docker&logoColor=FF4E17)
 
-**Interfaces & services**
+</details>
+
+<details>
+<summary><b>Interfaces &amp; services</b></summary>
+
+<br/>
+
 ![React](https://img.shields.io/badge/React-1c2022?style=flat-square&logo=react&logoColor=FF4E17)
 ![Next.js](https://img.shields.io/badge/Next.js-1c2022?style=flat-square&logo=nextdotjs&logoColor=FF4E17)
 ![FastAPI](https://img.shields.io/badge/FastAPI-1c2022?style=flat-square&logo=fastapi&logoColor=FF4E17)
 ![Node.js](https://img.shields.io/badge/Node.js-1c2022?style=flat-square&logo=nodedotjs&logoColor=FF4E17)
 ![Three.js](https://img.shields.io/badge/Three.js-1c2022?style=flat-square&logo=threedotjs&logoColor=FF4E17)
 ![Tailwind](https://img.shields.io/badge/Tailwind-1c2022?style=flat-square&logo=tailwindcss&logoColor=FF4E17)
+
+</details>
 
 ---
 
