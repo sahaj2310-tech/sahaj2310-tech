@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0f10,50:1c2022,100:FF4E17&height=170&section=header&text=Sahaj%20Sinha&fontSize=54&fontColor=EDE8E1&animation=fadeIn&fontAlignY=36&desc=AI%20%26%20Big%20Data%20%C2%B7%20Woosong%20University%2C%20Daejeon&descAlignY=58&descSize=16" width="100%" alt="Sahaj Sinha" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0f10,50:1c2022,100:FF4E17&height=170&section=header&text=Sahaj%20Sinha&fontSize=54&fontColor=EDE8E1&animation=fadeIn&fontAlignY=36&desc=AI%20and%20Big%20Data%20%C2%B7%20Woosong%20University%2C%20Daejeon&descAlignY=58&descSize=16" width="100%" alt="Sahaj Sinha" />
 
 <a href="https://sahaj-sinha.netlify.app">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=900&color=FF4E17&center=true&vCenter=true&width=760&height=42&lines=Turning+sensor+noise+into+a+map+a+machine+can+act+on;Pose+estimation+%26+computer+vision+at+the+Woosong+AI+Lab;SLAM+%C2%B7+Robotics+%C2%B7+Real-time+systems+%C2%B7+Applied+AI" alt="What I work on" />
@@ -92,6 +92,23 @@ Further papers in preparation with faculty, for IEEE journals and other venues.
 ---
 
 <div align="center">
+
+### Pinned work
+
+<a href="https://github.com/sahaj2310-tech/AETHER-SLAM">
+  <img width="49%" src="https://github-readme-stats.shion.dev/api/pin/?username=sahaj2310-tech&repo=AETHER-SLAM&theme=dark&hide_border=true&bg_color=0d0f10&title_color=FF4E17&text_color=8b9195&icon_color=FF4E17" alt="AETHER-SLAM" />
+</a>
+<a href="https://github.com/sahaj2310-tech/WatchCore-RT-OS">
+  <img width="49%" src="https://github-readme-stats.shion.dev/api/pin/?username=sahaj2310-tech&repo=WatchCore-RT-OS&theme=dark&hide_border=true&bg_color=0d0f10&title_color=FF4E17&text_color=8b9195&icon_color=FF4E17" alt="WatchCore RTOS" />
+</a>
+<a href="https://github.com/sahaj2310-tech/TerraVanguard">
+  <img width="49%" src="https://github-readme-stats.shion.dev/api/pin/?username=sahaj2310-tech&repo=TerraVanguard&theme=dark&hide_border=true&bg_color=0d0f10&title_color=FF4E17&text_color=8b9195&icon_color=FF4E17" alt="TerraVanguard" />
+</a>
+<a href="https://github.com/sahaj2310-tech/UniMate">
+  <img width="49%" src="https://github-readme-stats.shion.dev/api/pin/?username=sahaj2310-tech&repo=UniMate&theme=dark&hide_border=true&bg_color=0d0f10&title_color=FF4E17&text_color=8b9195&icon_color=FF4E17" alt="UniMate" />
+</a>
+
+<br/><br/>
 
 ### Contribution graph, eaten
 
