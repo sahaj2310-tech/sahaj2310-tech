@@ -103,9 +103,6 @@ Further papers in preparation with faculty, for IEEE journals and other venues.
 
 <br/>
 
-![Activity](https://github-readme-activity-graph.vercel.app/graph?username=sahaj2310-tech&bg_color=0d0f10&color=8b9195&line=FF4E17&point=EDE8E1&area=true&area_color=FF4E17&hide_border=true&custom_title=Commit%20activity)
-
-<br/>
 
 ![Stats](https://github-readme-stats.shion.dev/api?username=sahaj2310-tech&theme=dark&hide_border=true&hide_title=true&icon_color=FF4E17&text_color=8b9195&bg_color=0d0f10)
 ![Languages](https://github-readme-stats.shion.dev/api/top-langs/?username=sahaj2310-tech&theme=dark&hide_border=true&layout=compact&text_color=8b9195&bg_color=0d0f10&title_color=FF4E17)
@@ -116,9 +113,6 @@ Further papers in preparation with faculty, for IEEE journals and other venues.
 
 <br/>
 
-![Trophies](https://github-profile-trophy.vercel.app/?username=sahaj2310-tech&theme=matrix&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6)
-
-<br/>
 
 ---
 
